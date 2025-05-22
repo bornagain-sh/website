@@ -1,0 +1,61 @@
+/* _utilities.css */
+
+/* Scrollbar Styles for .output */
+.output::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(20, 20, 30, 0.7);
+}
+
+.output::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 188, 212, 0.7);
+    border-radius: 4px;
+}
+
+.output::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 188, 212, 0.9);
+}
+
+.output {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 188, 212, 0.7) rgba(20, 20, 30, 0.7);
+}
+
+/* Scrollbar Styles for .right-menu */
+.right-menu::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(20, 20, 30, 0.7);
+}
+
+.right-menu::-webkit-scrollbar-thumb {
+    background-color: rgba(74, 20, 140, 0.7);
+    border-radius: 4px;
+}
+
+.right-menu::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(74, 20, 140, 0.9);
+}
+
+.right-menu {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(74, 20, 140, 0.7) rgba(20, 20, 30, 0.7);
+}
+
+/* Scrollbar Styles for .inline-command-menu */
+.inline-command-menu::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(20, 20, 30, 0.7);
+}
+
+.inline-command-menu::-webkit-scrollbar-thumb {
+    background-color: rgba(233, 30, 99, 0.7);
+    border-radius: 4px;
+}
+
+.inline-command-menu::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(233, 30, 99, 0.9);
+}
+
+.inline-command-menu {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(233, 30, 99, 0.7) rgba(20, 20, 30, 0.7);
+}

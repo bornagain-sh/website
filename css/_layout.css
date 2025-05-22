@@ -1,0 +1,114 @@
+/* _layout.css */
+
+.terminal-header {
+    background: linear-gradient(to right, rgba(0, 188, 212, 0.2), rgba(74, 20, 140, 0.3), rgba(0, 188, 212, 0.2));
+    border-radius: 15px;
+    padding: 15px 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #00bcd4;
+    text-align: center;
+    position: relative;
+    border: 1px solid rgba(0, 188, 212, 0.3);
+}
+
+.terminal-header h1 {
+    font-size: 2.2em;
+    margin: 0;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px rgba(0, 188, 212, 0.7);
+}
+
+.logo-container {
+    display: block;
+    margin-right: 20px;
+}
+
+.logo-container img {
+    height: 60px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.main-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    gap: 0; /* Dies kann angepasst werden, wenn du zwischen Terminal und Right-Menu einen Spalt möchtest */
+    flex-grow: 1;
+}
+
+.content-section-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-section-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px solid rgba(0, 188, 212, 0.2);
+    border-radius: 12px;
+    pointer-events: none;
+    z-index: 1;
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.3);
+}
+
+.terminal {
+    background-color: transparent; /* Überschrieben in .terminal-screen */
+    border-radius: 0; /* Überschrieben in .terminal-screen */
+    padding: 0; /* Überschrieben in .terminal-screen */
+    box-shadow: none; /* Überschrieben in .terminal-screen */
+    border: none; /* Überschrieben in .terminal-screen */
+    width: 75%;
+    max-width: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    height: 80vh;
+    max-height: 90vh;
+    position: relative;
+    z-index: 2;
+}
+
+/* Right-Menu ist jetzt primär für Desktop-Layout relevant */
+.right-menu {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    width: 20%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #00bcd4;
+    height: fit-content;
+    margin-top: 0;
+    position: relative; /* Für Desktop kann es normal im Flow sein */
+    top: auto;
+    left: auto;
+    transform: none;
+    z-index: 2;
+}

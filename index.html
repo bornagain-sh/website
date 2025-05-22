@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Born Again Shell – Enter the Dystopian Soundscape | Official Site</title>
+    <meta name="description" content="Dive into Born Again Shell, an interactive music project blending cyberpunk aesthetics with industrial electronic sounds. Explore the terminal, discover tracks, lyrics, and hidden lore.">
+    <meta name="keywords" content="Born Again Shell, cyberpunk, industrial music, electronic music, interactive terminal, dystopian, music project, audio, band, official site">
+    <meta name="author" content="Born Again Shell">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bornagainshell.com/">
+    <meta property="og:title" content="Born Again Shell – Enter the Dystopian Soundscape | Official Site">
+    <meta property="og:description" content="Dive into Born Again Shell, an interactive music project blending cyberpunk aesthetics with industrial electronic sounds. Explore the terminal, discover tracks, lyrics, and hidden lore.">
+    <meta property="og:image" content="https://bornagainshell.com/images/bash.png">
+
+    <link rel="icon" href="https://bornagainshell.com/assets/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: monospace;
+            background-color: #0d0d0d;
+            color: #00ff00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            flex-direction: column;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        .glitch-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            background-image: repeating-linear-gradient(0deg, #00ff001a, #00ff001a 1px, transparent 1px, transparent 10px),
+                              repeating-linear-gradient(90deg, #00ff001a, #00ff001a 1px, transparent 1px, transparent 10px);
+            background-size: 10px 10px;
+            opacity: 0.1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 2px solid #00ff00;
+            box-shadow: 0 0 15px #00ff00;
+            animation: fadeIn 2s ease-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 0.5em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #00ff00;
+            margin-bottom: 1em;
+        }
+
+        p {
+            margin-bottom: 1.2em;
+            color: #d0d0d0;
+        }
+
+        .boot-button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin-top: 2em;
+            background-color: #00ff00;
+            color: #0d0d0d;
+            border: 3px solid #00ff00;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            box-shadow: 0 0 10px #00ff00;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .boot-button:hover {
+            background-color: #00cc00;
+            box-shadow: 0 0 20px #00cc00, inset 0 0 10px #00cc00;
+            transform: scale(1.05);
+        }
+
+        .boot-button:active {
+            background-color: #009900;
+            box-shadow: 0 0 5px #009900;
+            transform: scale(0.98);
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            color: #555;
+            font-size: 0.8em;
+            z-index: 1;
+        }
+        .footer a {
+            color: #00ff00;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                max-width: 200px;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .boot-button {
+                font-size: 1.2em;
+                padding: 12px 25px;
+            }
+            .container {
+                padding: 15px;
+                margin: 0 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                max-width: 150px;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            p {
+                font-size: 0.9em;
+            }
+            .boot-button {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glitch-bg"></div>
+    <div class="container">
+        <img src="./images/bash.png" alt="Born Again Shell Logo" class="logo">
+        <h2>An Interactive Dystopian Soundscape</h2>
+        <p>Step into a fragmented digital reality, where the echoes of industrial sounds meet the whispers of forgotten code. Born Again Shell invites you to explore a unique interactive experience, blending experimental electronic music with a deep, narrative-driven cyberpunk atmosphere.</p>
+        <p>Navigate a virtual terminal to uncover hidden files, unearth cryptic messages, discover the genesis of our tracks, and delve into the lore of a world constantly on the brink of digital collapse.</p>
+        <p>This is more than just music; it's an interface to another dimension.</p>
+        <a href="terminal.html" class="boot-button">
+            BOOT SYSTEM // ACCESS REALITY
+        </a>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Born Again Shell. All rights reserved.
+        <a href="privacy.txt">Privacy Policy</a> | <a href="legal_notice.txt">Legal Notice</a>
+    </div>
+</body>
+</html>

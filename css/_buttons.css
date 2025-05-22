@@ -1,0 +1,123 @@
+/* _buttons.css */
+
+.command-menu-toggle-btn,
+.send-command-btn {
+    background-color: rgba(0, 188, 212, 0.15);
+    border: 1px solid rgba(0, 188, 212, 0.4);
+    color: #00bcd4;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 48px; /* Feste Breite für quadratische Buttons */
+    flex-shrink: 0; /* Verhindert, dass der Button schrumpft */
+}
+
+.command-menu-toggle-btn:hover,
+.send-command-btn:hover {
+    background-color: rgba(0, 188, 212, 0.3);
+    border-color: rgba(0, 188, 212, 0.7);
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+}
+
+.command-menu-toggle-btn.is-active {
+    background-color: rgba(74, 20, 140, 0.4);
+    border-color: rgba(74, 20, 140, 0.8);
+    box-shadow: 0 0 15px rgba(74, 20, 140, 0.7);
+}
+
+.command-button {
+    background-color: rgba(30, 30, 45, 0.7);
+    border: 1px solid rgba(0, 188, 212, 0.3);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    color: #00bcd4;
+    font-size: 0.9em;
+    height: 90px;
+    width: 100%; /* Passt sich an das Grid an */
+    position: relative;
+    overflow: hidden;
+}
+
+.command-button:hover {
+    background-color: rgba(0, 188, 212, 0.25);
+    border-color: rgba(0, 188, 212, 0.6);
+    box-shadow: 0 0 12px rgba(0, 188, 212, 0.7);
+    transform: translateY(-3px);
+}
+
+.command-button:active {
+    background-color: rgba(74, 20, 140, 0.3);
+    border-color: rgba(74, 20, 140, 0.8);
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.command-button i {
+    font-size: 2em;
+    margin-bottom: 5px;
+    color: #00bcd4;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.command-button span.command-name {
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-size: 1em;
+    text-shadow: 0 0 5px rgba(0, 188, 212, 0.4);
+    transition: opacity 0.2s ease;
+}
+
+.command-button span.command-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(20, 10, 30, 0.95);
+    color: #ff00d4;
+    border: none;
+    box-shadow: 0 0 15px rgba(255, 0, 212, 0.7);
+    font-family: 'Electrolize', monospace;
+    text-shadow: 0 0 10px rgba(255, 0, 212, 0.8);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(100%);
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Fallback for browsers that don't support -webkit-line-clamp */
+    display: -webkit-box; /* For -webkit-line-clamp to work */
+    -webkit-line-clamp: 5; /* Limit to 5 lines */
+    -webkit-box-orient: vertical; /* Required for -webkit-line-clamp */
+    line-clamp: 5; /* Standard property, but less supported */
+}
+
+.command-button:hover span.command-description {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.command-button:hover i,
+.command-button:hover span.command-name {
+    opacity: 0;
+    transform: translateY(-100%);
+}

@@ -1,0 +1,22 @@
+/* main.css */
+
+/* Basis-Styles, Resets, Schriftarten, globale Body-Styles */
+@import url('_base.css');
+
+/* Haupt-Layout und Wrapper */
+@import url('_layout.css');
+
+/* Terminal-Bereich: Screen, Output, Input */
+@import url('_terminal.css');
+
+/* Alle Arten von Buttons */
+@import url('_buttons.css');
+
+/* Hauptmenü (Burger-Menü) und Inline-Menüs (Command, File Browser) */
+@import url('_menus.css');
+
+/* Responsive Anpassungen (Media Queries) */
+@import url('_responsive.css');
+
+/* Zusätzliche Utilities, Scrollbars etc. */
+@import url('_utilities.css');
